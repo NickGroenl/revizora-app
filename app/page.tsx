@@ -1,15 +1,11 @@
-import 'react-responsive-modal/styles.css';
-import LayoutDashboard from './dashboard/page';
 import { Metadata } from 'next';
-
 export const metadata: Metadata = {
-  title: "Stockeado",
-  // other metadata
+  title: "Revizora",
 };
 const Page = () => {
 
   return (
-    <LayoutDashboard/>
+    <div></div>
   );
 }
 
