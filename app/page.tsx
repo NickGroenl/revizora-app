@@ -1,11 +1,12 @@
+import LoginLayout from '@/modules/auth/lib/LoginLayout';
 import { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: "Revizora",
+  title: "Sign up to Revizora",
 };
 const Page = () => {
 
   return (
-    <div></div>
+    <LoginLayout/>
   );
 }
 

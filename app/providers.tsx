@@ -1,8 +1,21 @@
 "use client";
-import { ThemeProvider } from "next-themes";
+import {ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#2b2d42',
+      light: '#fff'
+    },
+    secondary: {
+      main: '#8d99ae',
+      light: '#fff'
+    },
+  },
+});
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
+    <ThemeProvider theme={theme} >
       {children}
     </ThemeProvider>
   );
