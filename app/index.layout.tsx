@@ -1,10 +1,11 @@
 'use client';
 import LoginLayout from '@/modules/auth/lib/login.layout';
 import RegisterLayout from '@/modules/auth/lib/register.layout';
-import { Box } from '@mui/material';
+import { Box, Skeleton } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import LogoRevizora from '@/public/brand/logo_primary.png';
 import { useState } from 'react';
+import SideBarLayout from '@/modules/sidebar/lib/sidebar.layout';
 const style = {
     position: 'absolute' as 'absolute',
     top: '50%',
@@ -21,8 +22,12 @@ const style = {
 };
 const IndexLayout = () => {
   const [modalSelected, setSelectedModal] = useState<string>('login');
-  return (<div className="content-center">
-      <img width='150px' src={LogoRevizora.src}/>
+  return (<div>
+      <SideBarLayout sideBarChildren={
+        <div>
+            <Skeleton variant="rectangular" width='100%' height='500px' />
+        </div>
+      }/>
       <Modal
           open={true}
           aria-labelledby="modal-modal-title"
