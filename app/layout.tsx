@@ -20,7 +20,7 @@ export default async function RootLayout({
       </head>
       
 
-      <body className={`bg-[#BDC3C7]`}>
+      <body className={`bg-[#edf2f4]`}>
         <Providers>
           {children}
         </Providers>
