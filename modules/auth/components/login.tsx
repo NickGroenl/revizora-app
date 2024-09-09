@@ -21,6 +21,7 @@ const LoginForm = ( ) => {
             error={false}
             id="outlined-error-helper-text"
             label="Correo electronico"
+            type='email'
         />
         <TextField
             color='secondary'
@@ -30,6 +31,7 @@ const LoginForm = ( ) => {
             error={false}
             id="outlined-error-helper-text"
             label="Contraseña"  
+            type='password'
         />
         <a href="#" className="c-secondary fz-05">¿Olvidaste tu contraseña?.</a>
         <Button variant="contained" fullWidth sx={{mt: 2}} color='primary'>Ingresar</Button>
