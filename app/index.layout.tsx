@@ -1,6 +1,6 @@
 'use client';
-import LoginLayout from '@/modules/auth/lib/LoginLayout';
-import RegisterLayout from '@/modules/auth/lib/RegisterLayout';
+import LoginLayout from '@/modules/auth/lib/login.layout';
+import RegisterLayout from '@/modules/auth/lib/register.layout';
 import { Box } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import LogoRevizora from '@/public/brand/logo_primary.png';
