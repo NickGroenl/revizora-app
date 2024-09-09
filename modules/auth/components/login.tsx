@@ -34,10 +34,6 @@ const LoginForm = ( ) => {
         <a href="#" className="c-secondary fz-05">¿Olvidaste tu contraseña?.</a>
         <Button variant="contained" fullWidth sx={{mt: 2}} color='primary'>Ingresar</Button>
         <SocialAuth/>
-        <Box className="mt-2" display='flex' justifyContent='center'>
-            <p className="c-secondary mr-05">¿No tienes una cuenta?</p>
-            <a href='#' className="c-primary">prueba gratis</a>
-        </Box>
     </div>
     
   </Box>

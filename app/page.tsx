@@ -1,13 +1,12 @@
-import LoginLayout from '@/modules/auth/lib/LoginLayout';
 import { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: "Sign up to Revizora",
-};
-const Page = () => {
+import IndexLayout from './index.layout';
 
-  return (
-    <LoginLayout/>
-  );
+export const metadata: Metadata = {
+  title: "Onboard on Revizora",
+};
+
+const Page = () => {
+  return (<IndexLayout/>);
 }
 
 export default Page;
