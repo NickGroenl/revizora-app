@@ -1,3 +1,4 @@
+import DashboardAppLayout from '@/modules/dashboard/lib/dashboard.layout';
 import SideBarLayout from '@/modules/sidebar/lib/sidebar.layout';
 import { Skeleton } from '@mui/material';
 import { Metadata } from 'next';
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (<SideBarLayout sideBarChildren={
     <div>
-        <Skeleton variant="rectangular" width='100%' height='500px' />
+        <DashboardAppLayout/>
     </div>
   }/>);
 }
