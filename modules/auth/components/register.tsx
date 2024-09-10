@@ -1,10 +1,14 @@
+'use client';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
 import SocialAuth from './social';
+import { useRouter } from 'next/navigation';
 const RegisterForm = ( ) => {
+    const router = useRouter();
     return <Box
+
     width='100%'
     component="form"
     noValidate={true}
@@ -46,7 +50,7 @@ const RegisterForm = ( ) => {
             label="Contraseña"  
         />
         <a href="#" className="c-secondary fz-05">¿Olvidaste tu contraseña?.</a>
-        <Button variant="contained" fullWidth sx={{mt: 2}} color='primary'>Ingresar</Button>
+        <Button onClick={() => router.push('/dashboard')} variant="contained" fullWidth sx={{mt: 2}} color='primary'>Ingresar</Button>
         <SocialAuth/>
         
     </div>
