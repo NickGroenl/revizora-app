@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: "Revizora",
-};
-const Page = () => {
+import IndexLayout from '../modules/auth/lib/index.layout';
 
-  return (
-    <div></div>
-  );
+export const metadata: Metadata = {
+  title: "Onboard on Revizora",
+};
+
+const Page = () => {
+  return (<IndexLayout/>);
 }
 
 export default Page;
